@@ -10,10 +10,11 @@ export default class Details extends Component {
             <ProdConsumer>
                 {(value) => {
                     console.log(value.details);
-                    const { id, name, poster, cost_in_credits, manufacturer, inCart, model, cargo_capacity, passengers, starship_class, hyperdrive_rating, crew, consumables } = value.details;
+                    let { id, name, poster, cost_in_credits, manufacturer, inCart, model, cargo_capacity, passengers, starship_class, hyperdrive_rating, crew, consumables } = value.details;
+
                     return (
                        <InfoContainer className="flex flex-col items-center">
-                           <div className="mt-12 bg-gray-200 px-5 py-2 shadow-md">
+                           <div className="mt-16 bg-gray-200 px-5 py-2 shadow-md">
                             <h2 className="font-bold text-center text-xl my-4">{name}</h2>
                             <div className="img-container">
                                 <div className="flex flex-col">
@@ -26,10 +27,10 @@ export default class Details extends Component {
                                     <p><strong>Ship Class:</strong> {starship_class}</p>
                                     <p><strong>Starship Model:</strong> {model}</p>
                                     <p><strong>Hyperdrive rating:</strong> {hyperdrive_rating}</p>
-                                    <p><strong>Cargo capacity:</strong> {parseFloat(cargo_capacity).toLocaleString()} kg</p>
+                                    <p><strong>Cargo capacity:</strong> {cargo_capacity==="unknown" ? Math.floor(Math.random() * 337653).toLocaleString() : parseFloat(cargo_capacity).toLocaleString()} kg</p>
                                     <p><strong>Crew count:</strong> {crew}</p>
-                                    <p><strong>Passenger count:</strong> {passengers}</p>
-                                    <p><strong>Supplies span</strong>: {consumables}</p>
+                                    <p><strong>Passenger count:</strong> {passengers==="unknown" ? Math.floor(Math.random() * 99) : passengers}</p>
+                                    <p><strong>Supplies span</strong>: {consumables==="unknown" ? Math.floor(Math.random() * 99) + " weeks" : consumables}</p>
                                 </div>
                             </div>
                             <div className="btns space-x-3 my-5">

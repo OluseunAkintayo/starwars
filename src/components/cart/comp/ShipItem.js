@@ -25,8 +25,8 @@ export default class ShipItem extends Component {
                         )}
                     </ProdConsumer>
                     
-                    <div className="cardFooter flex items-center justify-between px-3 py-2 m-0">
-                        <span>{name}</span>
+                    <div className="cardFooter flex items-center text-sm justify-between px-3 py-2 m-0">
+                        <span className="capitalize font-bold">{name}</span>
                         <span>{parseFloat(cost_in_credits).toLocaleString()}</span>
                     </div>
             </ProductContainer>

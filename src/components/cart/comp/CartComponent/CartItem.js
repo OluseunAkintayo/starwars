@@ -6,7 +6,7 @@ export default function CartItem({item, value}) {
     const { increase, decrease, removeItem } = value;
     return (
         <div className="flex my-2 border-b py-1 text-xs">
-            <div className="w-2/6 product-title">
+            <div className="w-2/6 capitalize product-title">
                 {name}
             </div>
             <div className="w-1/6 text-right px-2 product-price">
