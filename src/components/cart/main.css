@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Ubuntu&display=swap');
+
+:root {
+    --mainBlue: #2a2a72;
+    --lightBlue: #009ffd;
+    --mainWhite: #f3f3f3;
+    --mainDark: #232528;
+    --mainYellow: #ffa400;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif !important; 
+    background: url('https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-25-1536x864.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.title {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.text-blue {
+    color: var(--mainBlue);
+}
+
+.text-bright {
+    color: var(--lighBlue);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: ease-in-out 0.5s;
+}
+
+a:hover {
+    color: inherit;
+    opacity: 0.8;
+}
+
+.details {
+    max-width: 850px !important;
+    margin: 0 auto;
+}
+
+/* cart */
+.qty-btn {
+    width: 1.25rem;
+    height: 1.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    margin: 0 0.3rem;
+    font-size: 1.125rem;
+}
+
+.qty-btn:hover {
+    background: rgb(228, 226, 226);
+}
+
+.clear-btn {
+    border: 1px solid rgb(202, 37, 37) !important;
+    color: rgb(202, 37, 37);
+    padding: 0.25rem 1rem;
+    border-radius: 0.375rem;
+    transition: ease-in-out 0.5s;
+}
+
+.clear-btn:hover {
+    background: rgb(202, 37, 37) !important;
+    color:white;
+    letter-spacing: 1px;
+}
+
+.product-container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .cartItem-container {
+        max-width: 575px;
+        overflow-x: scroll;
+    }
+}
