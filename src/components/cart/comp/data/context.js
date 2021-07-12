@@ -23,7 +23,7 @@ class ProdProvider extends Component {
         ships.forEach(item => {
             const singleItem = {...item};
             tempProducts = [...tempProducts,singleItem];
-        })
+        });
         this.setState(() => {
             return { shipsArray: tempProducts }
         });
@@ -39,6 +39,7 @@ class ProdProvider extends Component {
         this.setState(() => {
             return {details: productInfo}
         })
+        console.log(this.state)
     }
 
     addToCart = (id) => {

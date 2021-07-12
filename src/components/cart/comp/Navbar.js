@@ -1,22 +1,19 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { ButtonContainer } from './Button';
 
 export default class Navbar extends Component {
     render() {
         return (
             <Nav className="navbar h-12">
-                <div className="h-full">
+                <div className="h-full w-2/6">
                     <Link to="/" className="flex h-full">
                         <img src="https://cssanimation.rocks/demo/starwars/images/star.svg" />
                         <img src="https://cssanimation.rocks/demo/starwars/images/wars.svg" />
                     </Link>
                 </div>
-                <Link to="/cart">
-                    <ButtonContainer >
-                        Cart
-                    </ButtonContainer>
+                <Link to="/cart" className="cartLink" title="Cart">
+                    <i class="fas fa-shopping-cart"></i>
                 </Link>
             </Nav>
         )
@@ -34,4 +31,8 @@ const Nav = styled.nav`
     align-items: center;
     color: var(--mainWhite);
     padding: 0.75rem 1rem;
+    .cartLink {
+        padding: 0.25rem 0.5rem;
+        font-size: 1.25rem;
+    }
 `;

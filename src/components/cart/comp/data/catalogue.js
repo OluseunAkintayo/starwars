@@ -74,7 +74,7 @@ const ships = [
         "inCart": false,
         "count": 0,
         "total": 0,
-        "poster": "https://lh3.googleusercontent.com/proxy/f1xRYMApVKYQYdI1C6e296ok7WWOiJzAzymCzmTfwyHPiWU3YLEQApAspPWZHzO7rZVRkuYXORvupTqD6ex--6o055oh2dR6RuDXc_hARqcTbA",
+        "poster": "https://cdna.artstation.com/p/assets/images/images/019/160/250/medium/alexander-ivanov-sent-7.jpg",
         "starship_class": "landing craft", 
         "pilots": [], 
         "films": [
@@ -995,7 +995,7 @@ const ships = [
         "inCart": false,
         "count": 0,
         "total": 0,
-        "poster": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/be31d98d-9127-40eb-a14c-8b798541459a/dc5whfg-ea7f1975-d7ae-4572-949f-b407a1601fcf.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JlMzFkOThkLTkxMjctNDBlYi1hMTRjLThiNzk4NTQxNDU5YVwvZGM1d2hmZy1lYTdmMTk3NS1kN2FlLTQ1NzItOTQ5Zi1iNDA3YTE2MDFmY2YucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ter2N-14OK4fhpC6fpIEWf9Rvq7HYAPfGo2kPuQDTzs",
+        "poster": "https://static.wikia.nocookie.net/swg/images/5/56/Belbullab-22.JPG",
         "starship_class": "starfighter", 
         "pilots": [
             "http://swapi.dev/api/people/10/", 

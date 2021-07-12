@@ -17,7 +17,7 @@ export default class Cart extends Component {
                         if (cart.length > 0) {
                             return (
                                 <div className="max-w-4xl mx-auto space-y-6 p-3 mt-16 bg-white">
-                                    <h3 className="text-center font-bold mb-5">Your Cart</h3>
+                                    <h3 className="text-center text-xl font-bold mb-5">Your Cart</h3>
                                     <div className="cartItem-container">
                                         <CartList value={value} />
                                     </div>
@@ -35,11 +35,17 @@ export default class Cart extends Component {
 }
 
 const CartPage = styled.section`
-    height: 100vh;
+    height: 94.5vh;
     background-image: url('https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-23-1536x864.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow-y: auto;
     opacity: 0.7;
+
+    .cartItem-container {
+      height: 51.6vh;
+      overflow-y: auto;
+      padding-left: 1rem;
+    }
 `;

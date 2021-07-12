@@ -6,29 +6,28 @@ import { ProdConsumer } from './data/context';
 export default class ShipItem extends Component {
     render() {
         let { id, name, poster, cost_in_credits, inCart } = this.props.product;
-        let altCost  = Math.random() * 1849347;
         return (
             <ProductContainer className="">
-                    <ProdConsumer>
-                        {value => (
-                            <div className="imgContainer">
-                                <Link to="/details" className="h-3/4">
-                                    <img src={poster} alt={name} className="h-full" onClick={() => value.handleDetails(id)} />
-                                </Link>
-                                <button 
-                                    className="cartBtn"
-                                    disabled={inCart ? true : false}
-                                    onClick={() => {value.addToCart(id);}}>
-                                        {inCart ? (<p className="btn-text text-sm px-2 flex items-center justify-center py-1">Added to Cart</p>) : (<span className="btn-text text-sm px-2 flex items-center justify-center py-1">Add Item<span className="fas fa-cart-plus mx-1"></span></span>)}
-                                </button>
-                            </div>
-                        )}
-                    </ProdConsumer>
+                <ProdConsumer>
+                    {value => (
+                        <div className="imgContainer">
+                            <Link to="/details" className="h-3/4">
+                                <img src={poster} alt={name} className="h-full" onClick={() => value.handleDetails(id)} />
+                            </Link>
+                            <button 
+                              className="cartBtn"
+                              disabled={inCart ? true : false}
+                              onClick={() => {value.addToCart(id);}}>
+                              {inCart ? (<p className="btn-text text-sm px-2 flex items-center justify-center py-1">Added to Cart</p>) : (<span className="btn-text text-sm px-2 flex items-center justify-center py-1">Add Item<span className="fas fa-cart-plus mx-1"></span></span>)}
+                            </button>
+                        </div>
+                    )}
+                </ProdConsumer>
                     
-                    <div className="cardFooter flex items-center text-sm justify-between px-3 py-2 m-0">
-                        <span className="capitalize font-bold">{name}</span>
-                        <span>{parseFloat(cost_in_credits).toLocaleString()}</span>
-                    </div>
+                <div className="cardFooter flex items-center text-sm justify-between px-3 py-2 m-0">
+                    <span className="capitalize font-bold">{name}</span>
+                    <span>{parseFloat(cost_in_credits).toLocaleString()}</span>
+                </div>
             </ProductContainer>
         )
     }
@@ -77,4 +76,4 @@ const ProductContainer = styled.div`
         background: var(--mainBlue);
         transition: transform 0.5s ease-in-out;
     }
-`
+`;

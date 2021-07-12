@@ -56,6 +56,11 @@ a:hover {
     border: 1px solid gray;
     margin: 0 0.3rem;
     font-size: 1.125rem;
+    outline: none;
+}
+
+.qty-btn:focus{
+    outline: none;
 }
 
 .qty-btn:hover {
